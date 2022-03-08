@@ -1,16 +1,20 @@
-# chatly
+# Chatly (WIP)
 
-A new Flutter project.
+A chat application built with Flutter.
 
-## Getting Started
+## Inspiration
 
-This project is a starting point for a Flutter application.
+Link to Design on [Figma](https://www.figma.com/file/7eeAbg53c9QOq7s0kFyXw9/Chatly?node-id=1%3A3183) by [Moyinoluwa Olufisayo](https://fisayo.me)
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+| Landing Page 01 | Landing Page 02 | 
+|    :---:     |     :---:      |  
+| <img src="assets/images/landing_page01.png" width="500">   | <img src="assets/images/landing_page02.png" width="500">   |
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Landing Page 03 | Landing Page 04 | 
+|    :---:     |     :---:      |  
+| <img src="assets/images/landing_page03.png" width="500">   | <img src="assets/images/landing_page04.png" width="500">   |
+
+
+*WIP* ...
