@@ -16,8 +16,8 @@ class ChatlyAppbar extends StatelessWidget implements PreferredSizeWidget {
     return Container(
       color: black,
       padding: EdgeInsets.symmetric(
-        horizontal: isMobile ? 120.0 : 24,
-        vertical: 64,
+        horizontal: isMobile ? 48 : 120.0,
+        vertical: isMobile ? 24 : 64,
       ),
       child: Row(
         mainAxisAlignment:
@@ -29,7 +29,7 @@ class ChatlyAppbar extends StatelessWidget implements PreferredSizeWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
-                  Text(
+                  SelectableText(
                     about,
                     style: TextStyle(
                       color: white60,
@@ -38,7 +38,7 @@ class ChatlyAppbar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                   ),
                   HorizontalSpace(size: 80),
-                  Text(
+                  SelectableText(
                     contactUs,
                     style: TextStyle(
                       color: white60,
@@ -47,7 +47,7 @@ class ChatlyAppbar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                   ),
                   HorizontalSpace(size: 80),
-                  Text(
+                  SelectableText(
                     faqs,
                     style: TextStyle(
                       color: white60,

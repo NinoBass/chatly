@@ -12,9 +12,9 @@ class ChatlyLogo extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Image.asset(chatlyIcon),
+        Image.asset(chatlyIcon, color: green),
         const HorizontalSpace(),
-        const Text(
+        const SelectableText(
           chatly,
           style: TextStyle(
             color: green,

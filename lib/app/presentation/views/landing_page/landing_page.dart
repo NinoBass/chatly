@@ -65,7 +65,7 @@ class _DesktopView extends StatelessWidget {
                   ],
                 ),
                 const VerticalSpace(size: 20),
-                Text(
+                SelectableText(
                   description01,
                   style: TextStyle(
                     color: const Color(0xFFEEEFED).withOpacity(.5),
@@ -75,20 +75,19 @@ class _DesktopView extends StatelessWidget {
                 ),
                 const VerticalSpace(size: 60),
                 Row(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: white60,
-                      ),
-                      child: Row(
-                        children: [
-                          Image.asset(appleIcon),
-                        ],
-                      ),
+                  children: const [
+                    DownloadButtons(
+                      icon: appleIcon,
+                      platform: appleStore,
+                    ),
+                    HorizontalSpace(size: 24),
+                    DownloadButtons(
+                      icon: playstoreIcon,
+                      platform: googlePlay,
                     ),
                   ],
                 ),
+                const VerticalSpace(size: 60),
               ],
             ),
           ),
@@ -131,7 +130,7 @@ class _MobileView extends StatelessWidget {
               ],
             ),
             const VerticalSpace(size: 20),
-            Text(
+            SelectableText(
               description01,
               style: TextStyle(
                 color: const Color(0xFFEEEFED).withOpacity(.5),
