@@ -2,9 +2,14 @@
 const String baseImagesPath = 'assets/images/';
 const String baseIconsPath = 'assets/icons/';
 
-// pngs
+// pngs Images
 final String chatlyLogo = 'chatly_logo'.pngImg;
+final String phoneBg = 'phone_circle_bg'.pngImg;
+
+//png Icons
 final String chatlyIcon = 'chatly_icon'.pngIcon;
+final String appleIcon = 'apple_logo'.pngIcon;
+final String playstoreIcon = 'playstore_logo'.pngIcon;
 
 // image extension
 extension ImageExtension on String {
