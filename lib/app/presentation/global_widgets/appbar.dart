@@ -16,48 +16,44 @@ class ChatlyAppbar extends StatelessWidget implements PreferredSizeWidget {
     return Container(
       color: black,
       padding: EdgeInsets.symmetric(
-        horizontal: isMobile ? 48 : 120.0,
-        vertical: isMobile ? 24 : 64,
-      ),
+            horizontal: isMobile ? 48 : 130.0,
+          ) +
+          const EdgeInsets.only(top: 64),
       child: Row(
         mainAxisAlignment:
             isMobile ? MainAxisAlignment.start : MainAxisAlignment.center,
         children: [
           const ChatlyLogo(),
-          if (!isMobile)
-            Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  SelectableText(
-                    about,
-                    style: TextStyle(
-                      color: white60,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  HorizontalSpace(size: 80),
-                  SelectableText(
-                    contactUs,
-                    style: TextStyle(
-                      color: white60,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                  HorizontalSpace(size: 80),
-                  SelectableText(
-                    faqs,
-                    style: TextStyle(
-                      color: white60,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
+          if (!isMobile) ...const [
+            Spacer(),
+            SelectableText(
+              about,
+              style: TextStyle(
+                color: white60,
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
               ),
             ),
+            HorizontalSpace(size: 80),
+            SelectableText(
+              contactUs,
+              style: TextStyle(
+                color: white60,
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            HorizontalSpace(size: 80),
+            SelectableText(
+              faqs,
+              style: TextStyle(
+                color: white60,
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            Spacer(),
+          ],
         ],
       ),
     );

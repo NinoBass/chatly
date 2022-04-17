@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:chatly/app/presentation/resources/resources.dart';
 import 'package:chatly/app/presentation/widgets.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class DownloadButtons extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: const Color(0xFFEEEEEE).withOpacity(.5),
+        color: const Color(0xFFEEEEEE).withOpacity(.24),
       ),
       padding: const EdgeInsets.symmetric(
         horizontal: 25,
@@ -33,16 +34,18 @@ class DownloadButtons extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SelectableText(
+              const AutoSizeText(
                 getItOn,
+                maxLines: 1,
                 style: TextStyle(
                   color: Colors.white70,
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
                 ),
               ),
-              SelectableText(
+              AutoSizeText(
                 platform,
+                maxLines: 1,
                 style: const TextStyle(
                   color: Colors.white70,
                   fontSize: 24,
