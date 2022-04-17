@@ -71,6 +71,7 @@ class _DesktopView extends StatelessWidget {
                             color: white,
                             height: 1,
                             fontSize: 62,
+                            letterSpacing: 0,
                             fontWeight: FontWeight.w600,
                           ),
                           maxLines: 1,
@@ -92,6 +93,7 @@ class _DesktopView extends StatelessWidget {
                                 style: const TextStyle(
                                   fontSize: 62,
                                   color: white,
+                                  letterSpacing: 0,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -115,6 +117,7 @@ class _DesktopView extends StatelessWidget {
                           style: TextStyle(
                             color: const Color(0xFFEEEFED).withOpacity(.5),
                             fontSize: 18,
+                            letterSpacing: 0,
                             fontWeight: FontWeight.w400,
                           ),
                         ),

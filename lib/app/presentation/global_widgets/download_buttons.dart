@@ -21,16 +21,18 @@ class DownloadButtons extends StatelessWidget {
         color: const Color(0xFFEEEEEE).withOpacity(.24),
       ),
       padding: const EdgeInsets.symmetric(
-        horizontal: 25,
-        vertical: 18,
+        horizontal: 22,
+        vertical: 16,
       ),
       child: Row(
         children: [
           Image.asset(
             icon,
             color: Colors.white70,
+            height: 29,
+            width: 32,
           ),
-          const HorizontalSpace(size: 12),
+          const HorizontalSpace(size: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -39,7 +41,8 @@ class DownloadButtons extends StatelessWidget {
                 maxLines: 1,
                 style: TextStyle(
                   color: Colors.white70,
-                  fontSize: 18,
+                  fontSize: 16,
+                  letterSpacing: 0,
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -49,6 +52,7 @@ class DownloadButtons extends StatelessWidget {
                 style: const TextStyle(
                   color: Colors.white70,
                   fontSize: 24,
+                  letterSpacing: 0,
                   fontWeight: FontWeight.w600,
                 ),
               ),
